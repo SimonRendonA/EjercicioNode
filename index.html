@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        
+        <title>Ejercicio Node</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1 class="text-center" id="pageTitle">Escoja los datos que quiere visualizar</h1>
+        </div>
+        <div class="container-fluid row">
+            <h2 class="col-6" id="link"><a href="/api/clientes">Clientes</a></h2>
+            <h2 class="col-6" id="link"><a href="/api/proveedores">Proveedores</a></h2>
+
+        </div>
+        <div>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Contacto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{data}}
+                </tbody>
+            </table>
+        </div>
+       
+    </body>
+</html>
